@@ -1,0 +1,23 @@
+{
+  "name": "digital-clock",
+  "version": "1.0.0",
+  "description": "digital clock in react",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run serve | npm run dev",
+    "serve": "./node_modules/.bin/http-server -p 8080",
+    "dev": "webpack-dev-server --progress --colors --verbose --port 8090"
+  },
+  "author": "Morten Teinum",
+  "license": "ISC",
+  "dependencies": {
+    "classnames": "^2.1.3",
+    "react": "^0.13.3"
+  },
+  "devDependencies": {
+    "http-server": "^0.8.0",
+    "jsx-loader": "^0.13.2",
+    "webpack": "^1.12.1",
+    "webpack-dev-server": "^1.10.1"
+  }
+}

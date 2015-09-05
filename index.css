@@ -1,0 +1,54 @@
+body {
+  background-color: #000;
+  font-family: Helvetica;
+}
+
+.clock {
+  width: 210px;
+  margin: 0 auto;
+}
+
+.header {
+  color: #44ccff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.footer {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.footer > a:link {
+  color: #333;
+}
+
+.footer > a:hover {
+  color: #0080ff;
+}
+
+.clockBit {
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+}
+
+.clockBit.on {
+  background-color: #0080ff;
+}
+
+.clockBit.off {
+  background-color: #333;
+}
+
+.bitListPair {
+  display: table-cell;
+}
+
+.bitList {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 25px;
+  margin-left: 10px;
+}
