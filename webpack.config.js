@@ -1,7 +1,10 @@
+var dev = false;
+
 module.exports = {
   entry: './index.jsx',
   output: {
-    publicPath: 'http://localhost:8090/assets'
+    filename: 'bundle.js',
+    publicPath: dev ? 'http://localhost:8090/' : '/'
   },
   module: {
     loaders: [

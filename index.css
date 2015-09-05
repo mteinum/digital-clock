@@ -20,7 +20,7 @@ body {
   text-align: center;
 }
 
-.footer > a:link {
+.footer > a:link, a:visited {
   color: #333;
 }
 
