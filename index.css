@@ -24,13 +24,13 @@ body {
 }
 
 .clock {
-  width: 360px;
+  width: 300px;
   margin: auto;
 }
 
 .clock .bit {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin-top: 20px;
   margin-left: 20px;
   background-color: #333;
@@ -53,4 +53,18 @@ body {
 .clock .bitlist {
   display: inline-block;
   vertical-align: bottom;
+}
+
+@media (min-width: 768px) {
+  .clock {
+    width: 360px;
+  }
+
+  .clock .bit {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
 }
