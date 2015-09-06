@@ -1,13 +1,13 @@
 'use strict';
 
-var React = require('react');
-var Header = require('./header');
-var Footer = require('./footer');
-var ClockBitListPair = require('./clockBitListPair');
+import React from 'react';
+import Header from './header';
+import Footer from './footer';
+import ClockBitListPair from './clockBitListPair';
 
-module.exports = React.createClass({
+export default class Clock extends React.Component {
 
-  render: function() {
+  render () {
     return (
       <div>
         <Header date={this.props.date}/>
@@ -36,4 +36,4 @@ module.exports = React.createClass({
       </div>
     );
   }
-});
+}

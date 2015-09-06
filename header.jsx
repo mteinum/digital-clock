@@ -1,14 +1,14 @@
 'use strict';
 
-var React = require('react');
+import React from 'react';
 
-module.exports = React.createClass({
-  render: function (){
+export default class Header extends React.Component {
+  render () {
     return (
       <div className="header">
-        <h1>Digital Clock</h1>
-        <h4>in react</h4>
+        <h1>Binary Clock</h1>
+        <h4>in ReactJS</h4>
       </div>
     );
   }
-});
+}

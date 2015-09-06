@@ -1,12 +1,13 @@
 'use strict';
 
-var React = require('react');
-var classNames = require('classnames');
+import React from 'react';
+import classNames from 'classnames';
 
-module.exports = React.createClass({
+export default class ClockBit extends React.Component {
 
-  render: function() {
+  render() {
 
+    var test = "hello world";
     var set = this.props.bitmask & this.props.value;
 
     var classes = classNames({
@@ -19,4 +20,4 @@ module.exports = React.createClass({
       <div className={classes}></div>
     );
   }
-});
+}

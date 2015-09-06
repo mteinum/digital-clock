@@ -1,7 +1,7 @@
 'use strict';
 
-var React = require('react');
-var Clock = require('./clock');
+import React from 'react';
+import Clock from './clock';
 
 setInterval(function(){
   React.render(

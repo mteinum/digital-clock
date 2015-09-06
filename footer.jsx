@@ -1,13 +1,13 @@
 'use strict';
 
-var React = require('react');
+import React from 'react';
 
-module.exports = React.createClass({
-  render: function(){
+export default class Footer extends React.Component {
+  render () {
     return (
       <div className="footer">
         <a href="http://twitter.com/mteinum">@mteinum</a>
       </div>
     );
   }
-});
+}

@@ -1,12 +1,13 @@
 'use strict';
 
-var React = require('react');
-var ClockBit = require('./clockBit');
+import React from 'react';
+import ClockBit from './clockBit';
 
 var bitset = [1, 2, 4, 8]
 
-module.exports = React.createClass({
-  render: function(){
+export default class ClockBitList extends React.Component {
+
+  render () {
     var value = this.props.value,
        bits = bitset.slice(0, this.props.count);
 
@@ -24,4 +25,4 @@ module.exports = React.createClass({
       </div>
     );
   }
-});
+}

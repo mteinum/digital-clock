@@ -1,10 +1,10 @@
 'use strict';
 
-var React = require('react');
-var ClockBitList = require('./ClockBitList');
+import React from 'react';
+import ClockBitList from './ClockBitList';
 
-module.exports = React.createClass({
-  render: function(){
+export default class ClockBitListPair extends React.Component {
+  render () {
     var value = this.props.value,
         upper = (value / 10) % 10,
         lower = value % 10,
@@ -22,4 +22,4 @@ module.exports = React.createClass({
       </div>
     );
   }
-});
+}
