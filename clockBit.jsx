@@ -11,8 +11,7 @@ export default class ClockBit extends React.Component {
 
     var classes = classNames({
       bit: true,
-      on: set,
-      off: !set
+      on: set
     });
 
     return (

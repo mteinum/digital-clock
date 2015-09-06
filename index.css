@@ -32,14 +32,11 @@ body {
   width: 20px;
   height: 20px;
   margin-top: 5px;
+  background-color: #333;
 }
 
 .clock .bit.on {
   background-color: #61dafb;
-}
-
-.clock .bit.off {
-  background-color: #333;
 }
 
 .clock .bitlist-pair {
