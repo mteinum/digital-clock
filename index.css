@@ -3,11 +3,6 @@ body {
   font-family: Helvetica;
 }
 
-.clock {
-  width: 210px;
-  margin: 0 auto;
-}
-
 .header {
   color: #61dafb;
   padding-top: 50px;
@@ -20,33 +15,38 @@ body {
   text-align: center;
 }
 
-.footer > a:link, a:visited {
+.footer a:link, a:visited {
   color: #333;
 }
 
-.footer > a:hover {
+.footer a:hover {
   color: #61dafb;
 }
 
-.clockBit {
+.clock {
+  width: 210px;
+  margin: 0 auto;
+}
+
+.clock .bit {
   width: 20px;
   height: 20px;
   margin-top: 5px;
 }
 
-.clockBit.on {
+.clock .bit.on {
   background-color: #61dafb;
 }
 
-.clockBit.off {
+.clock .bit.off {
   background-color: #333;
 }
 
-.bitListPair {
+.clock .bitlist-pair {
   display: table-cell;
 }
 
-.bitList {
+.clock .bitlist {
   display: inline-block;
   vertical-align: bottom;
   width: 25px;

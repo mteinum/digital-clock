@@ -244,9 +244,22 @@
 	        'div',
 	        { className: 'footer' },
 	        _react2['default'].createElement(
-	          'a',
-	          { href: 'http://twitter.com/mteinum' },
-	          '@mteinum'
+	          'div',
+	          null,
+	          _react2['default'].createElement(
+	            'a',
+	            { href: 'http://twitter.com/mteinum' },
+	            '@mteinum'
+	          )
+	        ),
+	        _react2['default'].createElement(
+	          'div',
+	          null,
+	          _react2['default'].createElement(
+	            'a',
+	            { href: 'https://github.com/mteinum/digital-clock' },
+	            'source'
+	          )
 	        )
 	      );
 	    }
@@ -306,15 +319,15 @@
 
 	      return _react2['default'].createElement(
 	        'div',
-	        { className: 'bitListPair' },
+	        { className: 'bitlist-pair' },
 	        _react2['default'].createElement(
 	          'div',
-	          { className: 'bitList' },
+	          { className: 'bitlist' },
 	          _react2['default'].createElement(_ClockBitList2['default'], { count: upperCount, value: upper })
 	        ),
 	        _react2['default'].createElement(
 	          'div',
-	          { className: 'bitList' },
+	          { className: 'bitlist' },
 	          _react2['default'].createElement(_ClockBitList2['default'], { count: lowerCount, value: lower })
 	        )
 	      );
@@ -433,11 +446,10 @@
 	    key: 'render',
 	    value: function render() {
 
-	      var test = "hello world";
 	      var set = this.props.bitmask & this.props.value;
 
 	      var classes = (0, _classnames2['default'])({
-	        clockBit: true,
+	        bit: true,
 	        on: set,
 	        off: !set
 	      });

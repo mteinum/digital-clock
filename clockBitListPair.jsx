@@ -12,11 +12,11 @@ export default class ClockBitListPair extends React.Component {
         lowerCount = this.props.lowerCount;
 
     return (
-      <div className="bitListPair">
-        <div className="bitList">
+      <div className="bitlist-pair">
+        <div className="bitlist">
           <ClockBitList count={upperCount} value={upper}/>
         </div>
-        <div className="bitList">
+        <div className="bitlist">
           <ClockBitList count={lowerCount} value={lower}/>
           </div>
       </div>
