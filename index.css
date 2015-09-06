@@ -22,7 +22,7 @@ body {
 }
 
 .clock {
-  width: 240px;
+  width: 250px;
   margin: auto;
 }
 
@@ -48,6 +48,10 @@ body {
   display: table-cell;
 }
 
+.clock .bitlist-pair:last-child {
+  margin-right: 10px;
+}
+
 .clock .bitlist {
   display: inline-block;
   vertical-align: bottom;
@@ -55,7 +59,7 @@ body {
 
 @media (min-width: 768px) {
   .clock {
-    width: 360px;
+    width: 380px;
   }
 
   .clock .bit {
@@ -63,6 +67,10 @@ body {
     height: 40px;
     margin-top: 20px;
     margin-left: 20px;
+  }
+
+  .clock .bitlist-pair:last-child {
+    margin-right: 20px;
   }
 
   .header {

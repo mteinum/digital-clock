@@ -187,7 +187,7 @@
 	        _react2['default'].createElement(
 	          'h1',
 	          null,
-	          'Binary Clock'
+	          'binary clock'
 	        ),
 	        _react2['default'].createElement(
 	          'h4',
