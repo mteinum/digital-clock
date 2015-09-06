@@ -24,19 +24,26 @@ body {
 }
 
 .clock {
-  width: 210px;
-  margin: 0 auto;
+  width: 240px;
+  margin: auto;
 }
 
 .clock .bit {
-  width: 20px;
-  height: 20px;
-  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 10px;
   background-color: #333;
+  border-radius: 1px;
 }
 
 .clock .bit.on {
   background-color: #61dafb;
+  transition: all 0.4s ease-in-out;
+}
+
+.clock .bit.off {
+  transition: all 0.4s ease-in-out;
 }
 
 .clock .bitlist-pair {
@@ -46,6 +53,22 @@ body {
 .clock .bitlist {
   display: inline-block;
   vertical-align: bottom;
-  width: 25px;
-  margin-left: 10px;
+}
+
+
+@media (max-width: 640px) {
+
+  .clock {
+    width: 480px;
+  }
+
+  .clock .bit {
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 3px;
+  }
+
+
 }
