@@ -450,7 +450,8 @@
 
 	      var classes = (0, _classnames2['default'])({
 	        bit: true,
-	        on: set
+	        on: set,
+	        off: !set
 	      });
 
 	      return _react2['default'].createElement('div', { className: classes });
