@@ -24,17 +24,17 @@ body {
 }
 
 .clock {
-  width: 240px;
+  width: 360px;
   margin: auto;
 }
 
 .clock .bit {
-  width: 30px;
-  height: 30px;
-  margin-top: 10px;
-  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 20px;
   background-color: #333;
-  border-radius: 1px;
+  border-radius: 3px;
 }
 
 .clock .bit.on {
@@ -53,22 +53,4 @@ body {
 .clock .bitlist {
   display: inline-block;
   vertical-align: bottom;
-}
-
-
-@media (max-width: 768px) {
-
-  .clock {
-    width: 480px;
-  }
-
-  .clock .bit {
-    width: 60px;
-    height: 60px;
-    margin-top: 20px;
-    margin-left: 20px;
-    border-radius: 3px;
-  }
-
-
 }
