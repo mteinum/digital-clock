@@ -1,9 +1,9 @@
 'use strict';
 
-import React from 'react';
+import { Component } from 'react';
 import ClockBitList from './ClockBitList';
 
-export default class ClockBitListPair extends React.Component {
+export default class ClockBitListPair extends Component {
   render () {
     var value = this.props.value,
         upper = (value / 10) % 10,

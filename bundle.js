@@ -52,12 +52,12 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _clock = __webpack_require__(2);
+	var _Clock = __webpack_require__(2);
 
-	var _clock2 = _interopRequireDefault(_clock);
+	var _Clock2 = _interopRequireDefault(_Clock);
 
 	setInterval(function () {
-	  _react2['default'].render(_react2['default'].createElement(_clock2['default'], { date: new Date() }), document.getElementById('content'));
+	  _react2['default'].render(_react2['default'].createElement(_Clock2['default'], { date: new Date() }), document.getElementById('content'));
 	}, 500);
 
 /***/ },
@@ -88,22 +88,20 @@
 
 	var _react = __webpack_require__(1);
 
-	var _react2 = _interopRequireDefault(_react);
+	var _Header = __webpack_require__(3);
 
-	var _header = __webpack_require__(3);
+	var _Header2 = _interopRequireDefault(_Header);
 
-	var _header2 = _interopRequireDefault(_header);
+	var _Footer = __webpack_require__(4);
 
-	var _footer = __webpack_require__(4);
+	var _Footer2 = _interopRequireDefault(_Footer);
 
-	var _footer2 = _interopRequireDefault(_footer);
+	var _ClockBitListPair = __webpack_require__(5);
 
-	var _clockBitListPair = __webpack_require__(5);
+	var _ClockBitListPair2 = _interopRequireDefault(_ClockBitListPair);
 
-	var _clockBitListPair2 = _interopRequireDefault(_clockBitListPair);
-
-	var Clock = (function (_React$Component) {
-	  _inherits(Clock, _React$Component);
+	var Clock = (function (_Component) {
+	  _inherits(Clock, _Component);
 
 	  function Clock() {
 	    _classCallCheck(this, Clock);
@@ -114,33 +112,33 @@
 	  _createClass(Clock, [{
 	    key: 'render',
 	    value: function render() {
-	      return _react2['default'].createElement(
+	      return React.createElement(
 	        'div',
 	        null,
-	        _react2['default'].createElement(_header2['default'], { date: this.props.date }),
-	        _react2['default'].createElement(
+	        React.createElement(_Header2['default'], { date: this.props.date }),
+	        React.createElement(
 	          'div',
 	          { className: 'clock' },
-	          _react2['default'].createElement(_clockBitListPair2['default'], {
+	          React.createElement(_ClockBitListPair2['default'], {
 	            lowerCount: '4',
 	            upperCount: '2',
 	            value: this.props.date.getHours() }),
-	          _react2['default'].createElement(_clockBitListPair2['default'], {
+	          React.createElement(_ClockBitListPair2['default'], {
 	            lowerCount: '4',
 	            upperCount: '3',
 	            value: this.props.date.getMinutes() }),
-	          _react2['default'].createElement(_clockBitListPair2['default'], {
+	          React.createElement(_ClockBitListPair2['default'], {
 	            lowerCount: '4',
 	            upperCount: '3',
 	            value: this.props.date.getSeconds() })
 	        ),
-	        _react2['default'].createElement(_footer2['default'], null)
+	        React.createElement(_Footer2['default'], null)
 	      );
 	    }
 	  }]);
 
 	  return Clock;
-	})(_react2['default'].Component);
+	})(_react.Component);
 
 	exports['default'] = Clock;
 	module.exports = exports['default'];
@@ -159,18 +157,14 @@
 
 	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var _react = __webpack_require__(1);
 
-	var _react2 = _interopRequireDefault(_react);
-
-	var Header = (function (_React$Component) {
-	  _inherits(Header, _React$Component);
+	var Header = (function (_Component) {
+	  _inherits(Header, _Component);
 
 	  function Header() {
 	    _classCallCheck(this, Header);
@@ -181,15 +175,15 @@
 	  _createClass(Header, [{
 	    key: 'render',
 	    value: function render() {
-	      return _react2['default'].createElement(
+	      return React.createElement(
 	        'div',
 	        { className: 'header' },
-	        _react2['default'].createElement(
+	        React.createElement(
 	          'h1',
 	          null,
 	          'binary clock'
 	        ),
-	        _react2['default'].createElement(
+	        React.createElement(
 	          'h4',
 	          null,
 	          'in ReactJS'
@@ -199,7 +193,7 @@
 	  }]);
 
 	  return Header;
-	})(_react2['default'].Component);
+	})(_react.Component);
 
 	exports['default'] = Header;
 	module.exports = exports['default'];
@@ -218,18 +212,14 @@
 
 	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var _react = __webpack_require__(1);
 
-	var _react2 = _interopRequireDefault(_react);
-
-	var Footer = (function (_React$Component) {
-	  _inherits(Footer, _React$Component);
+	var Footer = (function (_Component) {
+	  _inherits(Footer, _Component);
 
 	  function Footer() {
 	    _classCallCheck(this, Footer);
@@ -240,22 +230,22 @@
 	  _createClass(Footer, [{
 	    key: 'render',
 	    value: function render() {
-	      return _react2['default'].createElement(
+	      return React.createElement(
 	        'div',
 	        { className: 'footer' },
-	        _react2['default'].createElement(
+	        React.createElement(
 	          'div',
 	          null,
-	          _react2['default'].createElement(
+	          React.createElement(
 	            'a',
 	            { href: 'http://twitter.com/mteinum' },
 	            '@mteinum'
 	          )
 	        ),
-	        _react2['default'].createElement(
+	        React.createElement(
 	          'div',
 	          null,
-	          _react2['default'].createElement(
+	          React.createElement(
 	            'a',
 	            { href: 'https://github.com/mteinum/digital-clock' },
 	            'source'
@@ -266,7 +256,7 @@
 	  }]);
 
 	  return Footer;
-	})(_react2['default'].Component);
+	})(_react.Component);
 
 	exports['default'] = Footer;
 	module.exports = exports['default'];
@@ -293,14 +283,12 @@
 
 	var _react = __webpack_require__(1);
 
-	var _react2 = _interopRequireDefault(_react);
-
 	var _ClockBitList = __webpack_require__(6);
 
 	var _ClockBitList2 = _interopRequireDefault(_ClockBitList);
 
-	var ClockBitListPair = (function (_React$Component) {
-	  _inherits(ClockBitListPair, _React$Component);
+	var ClockBitListPair = (function (_Component) {
+	  _inherits(ClockBitListPair, _Component);
 
 	  function ClockBitListPair() {
 	    _classCallCheck(this, ClockBitListPair);
@@ -317,25 +305,25 @@
 	          upperCount = this.props.upperCount,
 	          lowerCount = this.props.lowerCount;
 
-	      return _react2['default'].createElement(
+	      return React.createElement(
 	        'div',
 	        { className: 'bitlist-pair' },
-	        _react2['default'].createElement(
+	        React.createElement(
 	          'div',
 	          { className: 'bitlist' },
-	          _react2['default'].createElement(_ClockBitList2['default'], { count: upperCount, value: upper })
+	          React.createElement(_ClockBitList2['default'], { count: upperCount, value: upper })
 	        ),
-	        _react2['default'].createElement(
+	        React.createElement(
 	          'div',
 	          { className: 'bitlist' },
-	          _react2['default'].createElement(_ClockBitList2['default'], { count: lowerCount, value: lower })
+	          React.createElement(_ClockBitList2['default'], { count: lowerCount, value: lower })
 	        )
 	      );
 	    }
 	  }]);
 
 	  return ClockBitListPair;
-	})(_react2['default'].Component);
+	})(_react.Component);
 
 	exports['default'] = ClockBitListPair;
 	module.exports = exports['default'];
@@ -362,16 +350,14 @@
 
 	var _react = __webpack_require__(1);
 
-	var _react2 = _interopRequireDefault(_react);
+	var _ClockBit = __webpack_require__(7);
 
-	var _clockBit = __webpack_require__(7);
-
-	var _clockBit2 = _interopRequireDefault(_clockBit);
+	var _ClockBit2 = _interopRequireDefault(_ClockBit);
 
 	var bitset = [1, 2, 4, 8];
 
-	var ClockBitList = (function (_React$Component) {
-	  _inherits(ClockBitList, _React$Component);
+	var ClockBitList = (function (_Component) {
+	  _inherits(ClockBitList, _Component);
 
 	  function ClockBitList() {
 	    _classCallCheck(this, ClockBitList);
@@ -388,10 +374,10 @@
 	      bits.reverse();
 
 	      var bitNodes = bits.map(function (bit) {
-	        return _react2['default'].createElement(_clockBit2['default'], { key: bit, value: value, bitmask: bit });
+	        return React.createElement(_ClockBit2['default'], { bitmask: bit, key: bit, value: value });
 	      });
 
-	      return _react2['default'].createElement(
+	      return React.createElement(
 	        'div',
 	        null,
 	        bitNodes
@@ -400,7 +386,7 @@
 	  }]);
 
 	  return ClockBitList;
-	})(_react2['default'].Component);
+	})(_react.Component);
 
 	exports['default'] = ClockBitList;
 	module.exports = exports['default'];
@@ -427,14 +413,12 @@
 
 	var _react = __webpack_require__(1);
 
-	var _react2 = _interopRequireDefault(_react);
-
 	var _classnames = __webpack_require__(8);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
-	var ClockBit = (function (_React$Component) {
-	  _inherits(ClockBit, _React$Component);
+	var ClockBit = (function (_Component) {
+	  _inherits(ClockBit, _Component);
 
 	  function ClockBit() {
 	    _classCallCheck(this, ClockBit);
@@ -454,12 +438,12 @@
 	        off: !set
 	      });
 
-	      return _react2['default'].createElement('div', { className: classes });
+	      return React.createElement('div', { className: classes });
 	    }
 	  }]);
 
 	  return ClockBit;
-	})(_react2['default'].Component);
+	})(_react.Component);
 
 	exports['default'] = ClockBit;
 	module.exports = exports['default'];

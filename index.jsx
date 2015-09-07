@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import Clock from './clock';
+import Clock from './Clock';
 
 setInterval(function(){
   React.render(

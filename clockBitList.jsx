@@ -1,21 +1,23 @@
 'use strict';
 
-import React from 'react';
-import ClockBit from './clockBit';
+import { Component } from 'react';
+import ClockBit from './ClockBit';
 
-var bitset = [1, 2, 4, 8]
+var bitset = [
+  1, 2, 4, 8
+]
 
-export default class ClockBitList extends React.Component {
+export default class ClockBitList extends Component {
 
   render () {
     var value = this.props.value,
-       bits = bitset.slice(0, this.props.count);
+    bits = bitset.slice(0, this.props.count);
 
-       bits.reverse();
+    bits.reverse();
 
-    var bitNodes = bits.map(function (bit){
+    var bitNodes = bits.map(function(bit) {
       return (
-        <ClockBit key={bit} value={value} bitmask={bit}/>
+        <ClockBit bitmask={bit} key={bit} value={value}/>
       );
     });
 
