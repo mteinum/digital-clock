@@ -1,23 +1,28 @@
-var dev = false;
+var webpack = require('webpack');
 
 module.exports = {
-  entry: './index.jsx',
+  entry: [
+     'webpack/hot/only-dev-server',
+    './js/App.jsx'
+  ],
   output: {
-    filename: 'bundle.js',
-    publicPath: dev ? 'http://localhost:8090/' : '/'
+    path: __dirname,
+    filename: "bundle.js"
   },
   module: {
     loaders: [
-      {
-        test: /\.jsx$/,
-        loader: 'babel-loader'
-      }
+      { test: /\.jsx$/, exclude: /node_modules/, loader: 'babel-loader' }
     ]
   },
+
   externals: {
     'react': 'React'
   },
   resolve: {
     extensions: ['', '.js', '.jsx']
-  }
+  },
+
+  plugins: [
+    new webpack.NoErrorsPlugin()
+  ]
 };

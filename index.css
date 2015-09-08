@@ -1,29 +1,130 @@
 body {
-  background-color: #000;
   font-family: Helvetica;
+  color: #fff;
+  background-color: #000;
+  margin: 0px;
 }
 
-.header {
+/* main menu */
+
+.menu.main {
+  /*position: static;*/
+  left: 0px;
+  top: 0px;
+  background-color: 0;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-bottom: solid 1px #505050;
+}
+
+.menu.main > a {
+  margin-left: 10px;
+  text-decoration: none;
+  border: solid 1px #404040;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 2px;
+  background-color: #202020;
+}
+
+.menu.main > a:link {
+  color: #aaa;
+}
+
+.menu.main > a:visited {
+  color: #aaa;
+}
+
+.main.menu > a:hover {
   color: #61dafb;
-  text-align: center;
 }
 
-.footer {
-  padding-top: 30px;
-  text-align: center;
+/* footer */
+
+footer {
+	padding-top: 100px;
+	text-align: center;
+	font-size: 16px;
 }
 
-.footer a:link, a:visited {
-  color: #333;
+footer a {
+	color: #606060;
+	transition-duration: 1s;
 }
 
-.footer a:hover {
-  color: #61dafb;
+footer a:hover {
+	color: #61dafb;
+	text-shadow: 0px 0px 50px #88eeff;
 }
+
+/* word clock */
+
+.wordclock {
+    font-family: Futura, Tahoma;
+    width: 50%;
+    margin: auto;
+    overflow: auto;
+}
+
+@media (max-width: 750px) {
+  .wordclock {
+      width: 95%;
+  }
+}
+
+.wordclock h1 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: white;
+	text-align: center;
+	font-size: 62px;
+	text-transform: uppercase;
+}
+
+.wordclock div {
+  color: #606060;
+  font-size: 38px;
+  text-transform: uppercase;
+  margin-left: 10px;
+  float: left;
+}
+
+.wordclock .active {
+  color: white;
+	transition-duration: 1s;
+}
+
+.wordclock .minutes {
+  clear: both;
+	margin-left:auto;
+	margin-right:auto;
+  width: 100%;
+}
+
+.wordclock .minutes span {
+	width: 23%;
+	display: inline-block;
+	border: solid 1px 0;
+	text-align: center;
+}
+
+.wordclock .minutes .current {
+	color: red;
+	transition-duration: 3s;
+}
+
+/* binary clock */
 
 .clock {
   width: 250px;
   margin: auto;
+}
+
+.clock-header {
+  color: #61dafb;
+  text-align: center;
 }
 
 .clock .bit {

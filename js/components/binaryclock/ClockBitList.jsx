@@ -1,13 +1,13 @@
 'use strict';
 
-import { Component } from 'react';
+import React from 'react';
 import ClockBit from './ClockBit';
 
 var bitset = [
   1, 2, 4, 8
 ]
 
-export default class ClockBitList extends Component {
+export default class ClockBitList extends React.Component {
 
   render () {
     var value = this.props.value,

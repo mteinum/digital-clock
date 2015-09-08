@@ -1,26 +1,24 @@
 {
-  "name": "digital-clock",
+  "name": "react-wordclock",
   "version": "1.0.0",
-  "description": "digital clock in react",
+  "description": "wordclock implemented in reactjs",
   "main": "index.js",
   "scripts": {
-    "start": "npm run serve | npm run dev",
-    "serve": "./node_modules/.bin/http-server -p 8080",
-    "dev": "webpack-dev-server --progress --colors --verbose --port 8090",
+    "start": "webpack-dev-server --hot --progress --colors",
     "build": "webpack --progress --colors"
   },
-  "author": "Morten Teinum",
+  "author": "",
   "license": "ISC",
-  "dependencies": {
-    "classnames": "^2.1.3",
-    "react": "^0.13.3"
-  },
   "devDependencies": {
     "babel-core": "^5.8.23",
     "babel-loader": "^5.3.2",
-    "http-server": "^0.8.0",
-    "jsx-loader": "^0.13.2",
+    "react": "^0.13.3",
+    "react-hot-loader": "^1.3.0",
+    "react-router": "^0.13.3",
     "webpack": "^1.12.1",
     "webpack-dev-server": "^1.10.1"
+  },
+  "dependencies": {
+    "classnames": "^2.1.3"
   }
 }

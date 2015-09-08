@@ -1,9 +1,9 @@
 'use strict';
 
-import { Component } from 'react';
+import React from 'react';
 import classNames from 'classnames';
 
-export default class ClockBit extends Component {
+export default class ClockBit extends React.Component {
 
   render() {
 
