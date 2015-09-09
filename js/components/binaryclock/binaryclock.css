@@ -1,0 +1,74 @@
+
+
+
+
+/* binary clock */
+
+.clock {
+  width: 250px;
+  margin: auto;
+}
+
+.clock-header {
+  color: #61dafb;
+  text-align: center;
+}
+
+.clock .bit {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #333;
+  border-radius: 3px;
+}
+
+.clock .bit.on {
+  background-color: #61dafb;
+  transition: all 0.4s ease-in-out;
+}
+
+.clock .bit.off {
+  transition: all 0.4s ease-in-out;
+}
+
+.clock .bitlist-pair {
+  display: table-cell;
+}
+
+.clock .bitlist-pair:last-child {
+  margin-right: 10px;
+}
+
+.clock .bitlist {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+@media (min-width: 768px) {
+  .clock {
+    width: 380px;
+  }
+
+  .clock .bit {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .clock .bitlist-pair:last-child {
+    margin-right: 20px;
+  }
+
+  .header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .footer {
+    padding-top: 50px;
+  }
+
+
+}

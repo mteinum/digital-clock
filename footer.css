@@ -1,0 +1,23 @@
+/* footer */
+
+footer {
+	padding-top: 100px;
+	text-align: center;
+	font-size: 16px;
+}
+
+footer a {
+	color: #606060;
+	transition-duration: 1s;
+}
+
+footer a:hover {
+	color: #61dafb;
+	text-shadow: 0px 0px 50px #88eeff;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding-top: 50px;
+  }
+}

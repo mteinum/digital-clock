@@ -1,5 +1,7 @@
 var webpack = require('webpack');
 
+// console.log(process);
+
 module.exports = {
   entry: [
      //'webpack/hot/only-dev-server',

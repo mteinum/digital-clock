@@ -104,12 +104,12 @@
 	          _react2['default'].createElement(
 	            _reactRouter.Link,
 	            { to: 'wordclock' },
-	            'word'
+	            'Word'
 	          ),
 	          _react2['default'].createElement(
 	            _reactRouter.Link,
 	            { to: 'binaryclock' },
-	            'binary'
+	            'Binary'
 	          )
 	        ),
 	        _react2['default'].createElement(_reactRouter.RouteHandler, null),
@@ -625,7 +625,9 @@
 	        currentQueue = queue;
 	        queue = [];
 	        while (++queueIndex < len) {
-	            currentQueue[queueIndex].run();
+	            if (currentQueue) {
+	                currentQueue[queueIndex].run();
+	            }
 	        }
 	        queueIndex = -1;
 	        len = queue.length;
@@ -677,7 +679,6 @@
 	    throw new Error('process.binding is not supported');
 	};
 
-	// TODO(shtylman)
 	process.cwd = function () { return '/' };
 	process.chdir = function (dir) {
 	    throw new Error('process.chdir is not supported');

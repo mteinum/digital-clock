@@ -11,8 +11,8 @@ class App extends React.Component {
     return (
       <section>
         <div className="menu main">
-          <Link to="wordclock">word</Link>
-          <Link to="binaryclock">binary</Link>
+          <Link to="wordclock">Word</Link>
+          <Link to="binaryclock">Binary</Link>
         </div>
 
           <RouteHandler />
