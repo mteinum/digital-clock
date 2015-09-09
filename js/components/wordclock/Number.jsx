@@ -23,10 +23,10 @@ export default class Number extends React.Component {
         hour = this.props.value;
 
     if (now.getMinutes() > 34) {
-      return (now.getHours() + 1) % 12 == hour;
+      return (now.getHours() + 1) % 12 == hour || ()(now.getHours() + 1) % 12 == 0 && hour == 12);
     }
     else {
-      return now.getHours() % 12 == hour;
+      return now.getHours() % 12 == hour || (now.getHours() % 12 == 0 && hour == 12);
     }
   }
 
