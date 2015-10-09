@@ -1,6 +1,6 @@
 import React from 'react';
-import Router from 'react-router';
-import { DefaultRoute, Link, Route, RouteHandler } from 'react-router';
+import { render } from 'react-dom';
+import { Router, IndexRoute, Link, Route } from 'react-router';
 
 import WordClock from './components/wordclock/WordClock';
 import BinaryClock from './components/binaryclock/Clock';
@@ -11,11 +11,11 @@ class App extends React.Component {
     return (
       <section>
         <div className="menu main">
-          <Link to="wordclock">Word</Link>
-          <Link to="binaryclock">Binary</Link>
+          <Link to="/word">Word</Link>
+          <Link to="/binary">Binary</Link>
         </div>
 
-          <RouteHandler />
+      {this.props.children}
 
         <footer>
           <a href="http://twitter.com/mteinum">@mteinum</a>
@@ -26,13 +26,17 @@ class App extends React.Component {
 }
 
 let routes = (
-  <Route name="app" path="/" handler={App}>
-    <DefaultRoute handler={WordClock}/>
-    <Route name="wordclock" path="/clock/word" handler={WordClock}/>
-    <Route name="binaryclock" path="/clock/binary" handler={BinaryClock}/>
+  <Router>
+  <Route path="/" component={App}>
+    <IndexRoute component={WordClock}/>
+    <Route path="/word" component={WordClock}/>
+    <Route path="/binary" component={BinaryClock}/>
   </Route>
+  </Router>
 );
 
-Router.run(routes, function (Handler){
-  React.render(<Handler/>, document.body);
-});
+//Router.run(routes, function (Handler){
+//  React.render(<Handler/>, document.body);
+//});
+
+render(routes, document.getElementById('content'));
